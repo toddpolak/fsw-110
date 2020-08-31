@@ -1,3 +1,2 @@
-console.log(document);
-console.dir(document);
-console.table(document);
+var heading = document.getElementById("heading");
+heading.innerHTML = "PnP Selecting Elements"
