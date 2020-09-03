@@ -1,0 +1,20 @@
+var pageTitle = document.getElementsByTagName('title');
+var newH1 = document.createElement('h1');
+var newP = document.createElement('p');
+var newUl = document.createElement('ol');
+var arrLi = ['Item1', 'Item2', 'Item3', 'Item4', 'Item5'];
+
+pageTitle[0].textContent = "Creating Elements and Appending Elements";
+newH1.textContent = 'Welcome to my JS site';
+newP.textContent = 'All of this was created with Javascript';
+
+document.body.append(newH1);
+document.body.append(newP);
+
+for (i = 0; i < arrLi.length; i++) {
+    var newLi = document.createElement('li');
+    newLi.textContent = arrLi[i];
+    newUl.append(newLi);
+}
+
+document.body.append(newUl);
