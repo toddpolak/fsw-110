@@ -1,10 +1,9 @@
-var pageTitle = document.getElementsByTagName('title');
 var newH1 = document.createElement('h1');
 var newP = document.createElement('p');
 var newUl = document.createElement('ol');
 var arrLi = ['Item1', 'Item2', 'Item3', 'Item4', 'Item5'];
 
-pageTitle[0].textContent = "Creating/Appending Elements";
+document.title = "Creating/Appending Elements";
 newH1.textContent = 'Welcome to my JS site';
 newP.textContent = 'All of this was created with Javascript';
 
