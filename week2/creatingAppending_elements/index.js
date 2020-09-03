@@ -1,6 +1,6 @@
 var newH1 = document.createElement('h1');
 var newP = document.createElement('p');
-var newUl = document.createElement('ol');
+var newOl = document.createElement('ol');
 var arrLi = ['Item1', 'Item2', 'Item3', 'Item4', 'Item5'];
 
 document.title = "Creating/Appending Elements";
@@ -13,7 +13,7 @@ document.body.append(newP);
 for (i = 0; i < arrLi.length; i++) {
     var newLi = document.createElement('li');
     newLi.textContent = arrLi[i];
-    newUl.append(newLi);
+    newOl.append(newLi);
 }
 
-document.body.append(newUl);
+document.body.append(newOl);
