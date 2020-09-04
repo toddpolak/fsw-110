@@ -24,7 +24,6 @@ for (i = 0; i < arrNavLinks.length; i++) {
     var curItem = arrNavLinks[i];
     var navLink = document.createElement('a');
     var navLinkTxt = document.createTextNode(curItem[0]);
-
     var navLinkSep = document.createTextNode(' | ');
 
     navLink.appendChild(navLinkTxt)
