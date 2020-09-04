@@ -12,7 +12,6 @@ var pageH1 = document.createElement('h1');
 
 document.title = 'Basic Website Using JS';
 pageH1.textContent = 'Create a Basic Website Using JS';
-
 pageMain.appendChild(pageH1);
 
 // Page Links (loop thru array)
@@ -29,9 +28,6 @@ for (i = 0; i < arrPageLinks.length; i++){
 }
 
 pageMain.appendChild(pageUl)
-//document.body.append(pageUl);
-
 document.body.append(pageMain);
-
 pageFooter.innerHTML = '&copy; 2020 Webdev Student';
 document.body.append(pageFooter);
