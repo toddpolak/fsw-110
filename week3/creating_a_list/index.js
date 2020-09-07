@@ -1,6 +1,7 @@
 document.title = 'Turn an Array into a Visual List';
 
 var newH1Tag = document.createElement('h1');
+
 newH1Tag.textContent = "Hello World";
 document.body.append(newH1Tag);
 
