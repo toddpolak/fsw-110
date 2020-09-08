@@ -1,3 +1,5 @@
+document.title = 'Changing Styles/Classes Using JS';
+
 var arrH2 = ['Heading1', 'Heading2', 'Heading3', 'Heading4', 'Heading5'];
 
 for (i = 0; i < arrH2.length; i++) {
