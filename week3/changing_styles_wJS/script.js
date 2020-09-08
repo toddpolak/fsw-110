@@ -12,5 +12,6 @@ for (i = 0; i < arrH2.length; i++) {
         color = 'cornflowerblue';
     }
 
+    h2Tag.classList.add('border');
     document.body.append(h2Tag);
 }
