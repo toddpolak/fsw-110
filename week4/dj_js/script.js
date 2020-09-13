@@ -9,3 +9,7 @@ with (box.style) {
 box.addEventListener('mouseover', function() {
     box.style.backgroundColor = 'blue';
 })
+
+box.addEventListener('mousedown', function() {
+    box.style.backgroundColor = 'red';
+})
