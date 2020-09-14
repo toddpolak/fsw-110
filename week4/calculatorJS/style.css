@@ -3,7 +3,7 @@ body {
 }
 header, main, footer {
     margin: auto;
-    width: 300px;
+    width: 500px;
 }
 main {
     padding: 10px;
@@ -11,6 +11,9 @@ main {
 }
 footer {
     margin-top: 300px;
+}
+div {
+    padding: 10px;
 }
 input[type="button"] {
     background-color: black;
@@ -22,4 +25,8 @@ input[type="button"] {
 input[type="text"] {
     width: 40px;
     height: 25px;
+}
+label {
+    font-size: 1.5em;
+    color: white;
 }
