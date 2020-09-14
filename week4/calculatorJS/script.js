@@ -35,6 +35,6 @@ btnAdd.addEventListener('click', function() {
         add2.value = '';
         add2.focus();
     } else {
-        addRslt.textContent = 'Result: ' + Number(add1.value) + Number(add2.value);
+        addRslt.textContent = 'Result: ' + (Number(add1.value) + Number(add2.value));
     }
 })
