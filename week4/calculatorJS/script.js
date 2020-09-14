@@ -48,7 +48,7 @@ btnAdd.addEventListener('click', function() {
     } else {
         addRslt.textContent = 'Result: ' + (Number(add1.value) + Number(add2.value));
     }
-});
+})
 
 btnSub.addEventListener('click', function() {
     var sub1 = document.getElementById('txtSub1');
@@ -67,7 +67,7 @@ btnSub.addEventListener('click', function() {
     } else {
         subRslt.textContent = 'Result: ' + (Number(sub1.value) - Number(sub2.value));
     }
-});
+})
 
 btnMult.addEventListener('click', function() {
     var mult1 = document.getElementById('txtMult1');
@@ -86,4 +86,4 @@ btnMult.addEventListener('click', function() {
     } else {
         multRslt.textContent = 'Result: ' + (Number(mult1.value) * Number(mult2.value));
     }
-});
+})
