@@ -1,13 +1,16 @@
 var btnAdd = document.getElementById('btnAdd');
 var btnSub = document.getElementById('btnSub');
 var btnMult = document.getElementById('btnMult');
+var buttons = document.querySelectorAll("input[type=button]");
 
-btnAdd.addEventListener('mouseover', function() {
-    this.style.backgroundColor = 'firebrick';
-})
-btnAdd.addEventListener('mouseout', function() {
-    this.style.backgroundColor = 'black';
-})
+for (i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('mouseover', function() {
+        this.style.backgroundColor = 'firebrick';
+    });
+    buttons[i].addEventListener('mouseout', function() {
+        this.style.backgroundColor = 'black';
+    });
+}
 
 function validTxt(txt) {
     if (isNaN(txt) || txt.trim() == '') {
