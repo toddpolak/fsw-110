@@ -1,7 +1,17 @@
+var lblAdd = document.getElementById('lblAdd');
+var lblSub = document.getElementById('lblSub');
+var lblMult = document.getElementById('lblMult');
 var btnAdd = document.getElementById('btnAdd');
 var btnSub = document.getElementById('btnSub');
 var btnMult = document.getElementById('btnMult');
 var buttons = document.querySelectorAll("input[type=button]");
+
+lblAdd.textContent = '+';
+lblAdd.style.padding = '7px';
+lblSub.textContent = '-';
+lblSub.style.padding = '10px';
+lblMult.textContent = 'x';
+lblMult.style.padding = '8px';
 
 for (i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('mouseover', function() {
