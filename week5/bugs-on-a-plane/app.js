@@ -1,10 +1,10 @@
-var form = document.getElementByID("arline-form");
-var submit = document.getElementByID(submit);
+var form = document.getElementById("airline-form");
+var submit = document.getElementById('submit');
 var query = document.querySelector;
 
 function formAlert() {
-    var firstName = form.elements["firstName"].value;
-    var lastName = form.elements["lastName"].value;
+    var firstName = form.elements["first-name"].value;
+    var lastName = form.elements["last-name"].value;
     var age = form.elements["age"].value;
     var gender = form.elements["gender"].value;
     var location = form.elements["travel-location"].value;
