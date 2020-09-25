@@ -1,0 +1,21 @@
+body {
+    background-color: blanchedalmond;
+}
+main {
+    margin: auto;
+    width: 500px;
+}
+div {
+    padding: 5px;
+}
+input[type="text"] {
+    width: 200px;
+    height: 20px;
+}
+input[type="button"] {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    width: 120px;
+    height: 30px;
+}
