@@ -1,4 +1,4 @@
-var form = document.getElementById("airline-form");
+var form = document.getElementById('airline-form');
 var submit = document.getElementById('submit');
 var query = document.querySelector;
 
