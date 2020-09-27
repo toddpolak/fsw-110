@@ -9,24 +9,50 @@
             <h1>Travel Form</h1>
         </head>
         <main>
-            <form name="travel-form">
+            <form name="travel_form">
                 <div>
-                    <label for="first-name">First Name:</label>
-                    <input type="text" name="first-name" />
+                    <label>First Name:</label>
+                    <input type="text" name="first_name" required />
                 </div>
                 <div>
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" name="last-name" />
+                    <label>Last Name:</label>
+                    <input type="text" name="last_name" required />
                 </div>
                 <div>
-                    <label for="age">Age:</label>
-                    <input type="number" name="age">
+                    <label>Age:</label>
+                    <input type="number" name="age" required />
+                    Male<input type="radio" name="gender" value="male" required />
+                    Female<input type="radio" name="gender" value="female" required />
                 </div>
+                <div>
+                    <label>Traveling To:</label>
+                    <select name="location" required>
+                        <option value="" disabled selected hidden>- Select Location -</option>
+                        <option value="San Diego, CA">San Diego, CA</option>
+                        <option value="Los Angeles, CA">Los Angeles, CA</option>
+                        <option value="Phoenix, AZ">Phoenix, AZ</option>
+                        <option value="Dallas, TX">Dallas, TX</option>
+                    </select>
+                </div>
+                <div id="diet">
+                    <label>Dietary Restrictions:(check all that apply)<br></label>
+                    <label class="chkbox-label"><input type="checkbox" name="diet_restrictions" value="Gluten-free" />Gluten-free</label>
+                    <label class="chkbox-label"><input type="checkbox" name="diet_restrictions" value="Vegetarian" />Vegetarian</label>
+                    <label class="chkbox-label"><input type="checkbox" name="diet_restrictions" value="Vegan" />Vegan</label>
+                    <label class="chkbox-label"><input type="checkbox" name="diet_restrictions" value="No-dairy" />No dairy</label>
+                    <label class="chkbox-label"><input type="checkbox" name="diet_restrictions" value="Nut-free" />Nut-free</label>
+                    <label class="chkbox-label"><input type="checkbox" name="diet_restrictions" value="Shellfish-free" />Shellfish-free</label>
+                    <label class="chkbox-label"><input type="checkbox" name="diet_restrictions" value="Kosher" />Kosher</label>
+                    <label class="chkbox-label"><input type="checkbox" name="diet_restrictions" value="No Red Meat" />No Red Meat</label>
+                </div>
+                <span>
+                    <button name="submit">Submit</button>
+                </span>
             </form>
         </main>
         <footer>
             <span>&copy; 2020 Webdev Student</span>
         </footer>
-        <script src="scripts/jscript.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
