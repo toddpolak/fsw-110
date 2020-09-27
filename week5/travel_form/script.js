@@ -20,7 +20,13 @@ travelForm.addEventListener("submit", (event) => {
     alertMsg = `First Name: ${firstName}\nLast Name: ${lastName}\nAge: ${age}\nGender: ${gender}\nLocation: ${location}`;
 
     if (dietRestrictions.length != 0) {
-        alertMsg += `\nDietary Restrictions: ${dietRestrictions}`
+        alertMsg += `\nDietary Restrictions: `;
+        dietRestrictions.forEach(function(item, index, array) {
+            alertMsg += item;
+            if (index !== array.length - 1) {
+                alertMsg += ', ';
+            }
+        });
     }
 
     alert(alertMsg);
