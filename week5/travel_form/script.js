@@ -20,7 +20,7 @@ travelForm.addEventListener("submit", (event) => {
     alertMsg = `First Name: ${firstName}\nLast Name: ${lastName}\nAge: ${age}\nGender: ${gender}\nLocation: ${location}`;
 
     if (dietRestrictions.length != 0) {
-
+        alertMsg += `\nDietary Restrictions: ${dietRestrictions}`
     }
 
     alert(alertMsg);
