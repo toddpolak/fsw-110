@@ -17,3 +17,14 @@ function formatPhone(num) {
 }
 let phoneNum = '9095553598'
 console.log(formatPhone(phoneNum));
+
+function capitalizeFirstLetter(str) {
+    var strAry = str.toLowerCase().split(' ');
+    for (var i = 0; i < strAry.length; i++) {
+        strAry[i] = strAry[i].charAt(0).toUpperCase() + strAry[i].substr(1);   
+    }
+   return strAry.join(' ');
+}
+
+let strName = 'todd polak';
+console.log(capitalizeFirstLetter(strName));
