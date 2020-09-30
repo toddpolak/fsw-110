@@ -11,12 +11,7 @@
 .substr()
 */
 
-function formatPhone(num) {
-    return '(' + num.slice(0, 3) + ')' 
-        + num.slice(3, 6) + '-' + num.slice(6)
-}
-let phoneNum = '9095553598'
-//console.log(formatPhone(phoneNum));
+let strName = 'todd polak zappone';
 
 function properCase(str) {
     let strAry = str.toLowerCase().split(' ');
@@ -25,6 +20,16 @@ function properCase(str) {
     }
    return strAry.join(' ');
 }
-
-let strName = 'todd polak zappone';
 console.log(properCase(strName));
+
+let phoneNum1 = ('909.555.3598');
+let phoneNum2 = ('909-556-2672');
+
+function formatPhone(num) {
+    let cleanNum = num.replace( /-/g, "" ).replace(/\./g, "");
+
+    return '(' + cleanNum.slice(0, 3) + ')' 
+        + cleanNum.slice(3, 6) + '-' + cleanNum.slice(6)
+}
+console.log(formatPhone(phoneNum1));
+console.log(formatPhone(phoneNum2));
