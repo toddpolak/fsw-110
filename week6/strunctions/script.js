@@ -24,6 +24,7 @@ console.log(properCase(strName));
 
 let phoneNum1 = ('909.555.3598');
 let phoneNum2 = ('909-556-2672');
+let phoneNum3 = ('9095557780');
 
 function formatPhone(num) {
     let cleanNum = num.replace( /-/g, "" ).replace(/\./g, "");
@@ -33,3 +34,4 @@ function formatPhone(num) {
 }
 console.log(formatPhone(phoneNum1));
 console.log(formatPhone(phoneNum2));
+console.log(formatPhone(phoneNum3));
