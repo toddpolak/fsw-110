@@ -11,9 +11,21 @@
 .substr()
 */
 
+let strAddress = '2123 Center St.'
+
+noDigits = str => {
+    return str.match(/\D+/g);
+}
+console.log(noDigits(strAddress));
+
+onlyDigits = str => {
+    return str.match(/\d+/g);
+}
+console.log(onlyDigits(strAddress));
+
 let strName = 'todd polak zappone';
 
-function properCase(str) {
+properCase = str => {
     let strAry = str.toLowerCase().split(' ');
     for (let i = 0; i < strAry.length; i++) {
         strAry[i] = strAry[i].charAt(0).toUpperCase() + strAry[i].substr(1);   
@@ -26,7 +38,7 @@ let phoneNum1 = ('909.555.3598');
 let phoneNum2 = ('909-556-2672');
 let phoneNum3 = ('9095557780');
 
-function formatPhone(num) {
+formatPhone = num => {
     let cleanNum = num.replace( /-/g, "" ).replace(/\./g, "");
 
     return '(' + cleanNum.slice(0, 3) + ')' 
