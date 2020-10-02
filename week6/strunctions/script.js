@@ -11,6 +11,29 @@
 .substr()
 */
 
+let str1ToConcat = 'Java';
+let str2ToConcat = 'Script';
+
+concatStrings = (str1, str2) => {
+    return str1.concat(str2);
+}
+console.log(concatStrings(str1ToConcat, str2ToConcat));
+
+let strFindFirstIndex = 'JavaScript';
+let strSearchFor = 'Script';
+
+findFirstIndex = (str, searchFor, start) => {
+    return str.indexOf(searchFor, start);
+}
+console.log(findFirstIndex(strFindFirstIndex, strSearchFor, 0));
+
+let strFindLastIndex = 'Javascript and Python are both considered Scripting Languages.';
+
+findLastIndex = (str, searchFor, start) => {
+    return str.indexOf(searchFor, start);
+}
+console.log(findLastIndex(strFindLastIndex, strSearchFor, 0));
+
 let strAddress = '2123 Center St.'
 
 noDigits = str => {
