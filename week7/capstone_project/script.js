@@ -26,7 +26,6 @@ toDoForm.addEventListener("submit", e => {
     with (deleteBtn) {
         innerText = 'Remove';
         addEventListener('click', e => {
-            e.preventDefault();
             
             newLi.remove();
         });
