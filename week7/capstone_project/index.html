@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>To-Do List</h1>
+        </header>
+        <main>
+            <form name="to_do_form">
+                <div>
+                    <label for="to_do_task">Task:</label>
+                    <input type="text" name="to_do_task" />
+                    <label for="to_do_date">Date:</label>
+                    <input type="datetime-local" name="to_do_date" />
+                </div>
+                <div>
+                    <label for="to_do_description">Description:</label>
+                    <textarea name="to_do_description" rows="4" cols="50"></textarea>
+                </div>
+                <div>
+                    <button name="submit">Add To Do</button>
+                </div>
+                <div id="to_do_items">
+                    <ul id="to_do_list"></ul>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <span>&copy; 2020 Webdev Student</span>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
