@@ -7,3 +7,7 @@ main {
     background-image: url("pencil_paper.jpg");
     background-repeat: no-repeat;
 }
+
+ul {
+    padding: 20px;
+}
