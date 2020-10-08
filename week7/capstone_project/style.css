@@ -1,0 +1,9 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    height: 600px;
+    background-image: url("pencil_paper.jpg");
+    background-repeat: no-repeat;
+}

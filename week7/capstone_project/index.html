@@ -13,14 +13,11 @@
         <main>
             <form name="to_do_form">
                 <div>
-                    <label for="to_do_task">Task:</label>
-                    <input type="text" name="to_do_task" />
-                    <label for="to_do_date">Date:</label>
+                    <input type="text" name="to_do_item" placeholder="Enter ToDo Item" required />
                     <input type="datetime-local" name="to_do_date" />
                 </div>
                 <div>
-                    <label for="to_do_description">Description:</label>
-                    <textarea name="to_do_description" rows="4" cols="50"></textarea>
+                    <textarea name="to_do_description" rows="4" cols="50" placeholder="Enter Description"></textarea>
                 </div>
                 <div>
                     <button name="submit">Add To Do</button>
