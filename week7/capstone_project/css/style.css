@@ -38,7 +38,7 @@ textarea {
     height: 29px;
 }
 ul {
-    padding: 10px;
+    padding: 5px;
 }
 @media only screen and (min-width: 600px) and (max-width: 768px){
     #grid-container {

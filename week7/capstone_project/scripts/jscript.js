@@ -13,8 +13,8 @@ toDoForm.addEventListener("submit", e => {
     let spanDescription = document.createElement('span');
     let deleteBtn = document.createElement('button');
 
-    spanToDo.style.display = 'inline-block';
-    spanDate.style.display = 'inline-block';
+    spanToDo.style.display = 'block';
+    spanDate.style.display = 'block';
     spanDescription.style.display = 'block';
 
     spanToDo.textContent = toDo;
