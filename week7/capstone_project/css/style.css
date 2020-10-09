@@ -1,7 +1,6 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 #grid-container {
     display: grid;
     justify-content: center;
@@ -10,62 +9,54 @@ body {
     background-image: url("../img/pencil_paper_mobile.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
-}
-
-main {
     height: 500px;
 }
-
+main {
+    height: 400px;
+}
+div {
+    padding: 10px;
+}
+input[type="text"] {
+    width: 200px;
+}
+input[type="date"] {
+    width: 125px;
+}
+textarea {
+    resize: none;
+    width: 300px;
+    height: 50px;
+}
 #to_do_items {
-    height: 300px;
+    height: 200px;
     overflow: auto;
 }
-
-ul {
-    padding: 20px;
+.delete_btn {
+    background: url("../img/trash.jpg");
+    width: 26px;
+    height: 29px;
 }
-
+ul {
+    padding: 10px;
+}
 @media only screen and (min-width: 600px) and (max-width: 768px){
     #grid-container {
-        display: grid;
-        justify-content: center;
-        grid-gap: 5px;
         grid-template-columns: repeat(1, 380px);
         background-image: url("../img/pencil_paper_tablet.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 600px;
+        height: 550px;
     }
-    
     main {
-        height: 500px;
-    }
-    
-    #to_do_items {
-        height: 300px;
-        overflow: auto;
+        height: 450px;
     }
 }
-
 @media only screen and (min-width: 768px) {
     #grid-container {
-        display: grid;
-        justify-content: center;
-        grid-gap: 5px;
         grid-template-columns: repeat(1, 380px);
         background-image: url("../img/pencil_paper.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 600px;
+        height: 650px;
     }
-    
     main {
         height: 500px;
-    }
-    
-    #to_do_items {
-        height: 300px;
-        overflow: auto;
     }
 }

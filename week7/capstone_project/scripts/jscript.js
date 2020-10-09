@@ -13,13 +13,20 @@ toDoForm.addEventListener("submit", e => {
     let spanDescription = document.createElement('span');
     let deleteBtn = document.createElement('button');
 
-    spanToDo.style.display = 'block';
-    spanDate.style.display = 'block';
+    spanToDo.style.display = 'inline-block';
+    spanDate.style.display = 'inline-block';
     spanDescription.style.display = 'block';
 
     spanToDo.textContent = toDo;
     spanDate.textContent = toDoDate;
     spanDescription.textContent = toDoDescription;
+
+    with (deleteBtn) {
+        classList.add('delete_btn');
+        addEventListener('click', e => {
+            newLi.remove();
+        });
+    }
 
     with (newLi) {
         appendChild(spanDate);
@@ -28,14 +35,6 @@ toDoForm.addEventListener("submit", e => {
         appendChild(deleteBtn);
     }
     toDoList.appendChild(newLi);
-
-
-    with (deleteBtn) {
-        innerText = 'Delete';
-        addEventListener('click', e => {
-            newLi.remove();
-        });
-    }
 
     with (toDoForm) {
         to_do.value = '';
