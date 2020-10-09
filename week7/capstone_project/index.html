@@ -3,33 +3,35 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <title>To-Do List</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <h1>To-Do List</h1>
-        </header>
-        <main>
-            <form name="to_do_form">
-                <div>
-                    <input type="text" name="to_do" placeholder="Enter ToDo" required />
-                    <input type="date" name="to_do_date" />
+        <div id="grid-container">
+            <header>
+                <h1>To-Do List</h1>
+            </header>
+            <main>
+                <form name="to_do_form">
+                    <div>
+                        <input type="text" name="to_do" placeholder="Enter ToDo" />
+                        <input type="date" name="to_do_date" />
+                    </div>
+                    <div>
+                        <textarea name="to_do_description" rows="4" cols="50" placeholder="Enter Description"></textarea>
+                    </div>
+                    <div>
+                        <button name="submit">Add To Do</button>
+                    </div>
+                </form>
+                <div id="to_do_items">
+                    <ul id="to_do_list"></ul>
                 </div>
-                <div>
-                    <textarea name="to_do_description" rows="4" cols="50" placeholder="Enter Description"></textarea>
-                </div>
-                <div>
-                    <button name="submit">Add To Do</button>
-                </div>
-            </form>
-            <div id="to_do_items">
-                <ul id="to_do_list"></ul>
-            </div>
-        </main>
-        <footer>
-            <span>&copy; 2020 Webdev Student</span>
-        </footer>
+            </main>
+            <footer>
+                <span>&copy; 2020 Webdev Student</span>
+            </footer>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
