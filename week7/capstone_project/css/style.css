@@ -34,11 +34,9 @@ textarea {
 }
 .delete_btn {
     background: url("../img/trash.jpg");
-    width: 26px;
-    height: 29px;
-}
-ul {
-    padding: 5px;
+    width: 23px;
+    height: 27px;
+    border: none;
 }
 @media only screen and (min-width: 600px) and (max-width: 768px){
     #grid-container {
