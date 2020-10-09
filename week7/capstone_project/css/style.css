@@ -20,9 +20,6 @@ div {
 input[type="text"] {
     width: 200px;
 }
-input[type="date"] {
-    width: 125px;
-}
 textarea {
     resize: none;
     width: 300px;
@@ -37,10 +34,11 @@ textarea {
     width: 23px;
     height: 27px;
     border: none;
+    cursor: pointer;
 }
 @media only screen and (min-width: 600px) and (max-width: 768px){
     #grid-container {
-        grid-template-columns: repeat(1, 380px);
+        grid-template-columns: repeat(1, 480px);
         background-image: url("../img/pencil_paper_tablet.jpg");
         height: 550px;
     }
@@ -50,7 +48,7 @@ textarea {
 }
 @media only screen and (min-width: 768px) {
     #grid-container {
-        grid-template-columns: repeat(1, 380px);
+        grid-template-columns: repeat(1, 580px);
         background-image: url("../img/pencil_paper.jpg");
         height: 650px;
     }
