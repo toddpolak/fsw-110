@@ -7,7 +7,7 @@ body {
     justify-content: center;
     grid-gap: 5px;
     grid-template-columns: repeat(1, 380px);
-    background-image: url("pencil_paper_mobile.jpg");
+    background-image: url("../img/pencil_paper_mobile.jpg");
     background-position: center;
     background-repeat: no-repeat;
     height: 600px;
@@ -32,7 +32,7 @@ ul {
         justify-content: center;
         grid-gap: 5px;
         grid-template-columns: repeat(1, 380px);
-        background-image: url("pencil_paper_tablet.jpg");
+        background-image: url("../img/pencil_paper_tablet.jpg");
         background-position: center;
         background-repeat: no-repeat;
         height: 600px;
@@ -54,7 +54,7 @@ ul {
         justify-content: center;
         grid-gap: 5px;
         grid-template-columns: repeat(1, 380px);
-        background-image: url("pencil_paper.jpg");
+        background-image: url("../img/pencil_paper.jpg");
         background-position: center;
         background-repeat: no-repeat;
         height: 600px;
