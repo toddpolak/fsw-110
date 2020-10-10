@@ -1,33 +1,39 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("../img/pencil_paper_mobile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 #grid-container {
     display: grid;
     justify-content: center;
     grid-gap: 5px;
     grid-template-columns: repeat(1, 380px);
-    background-image: url("../img/pencil_paper_mobile.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;
 }
 main {
-    height: 400px;
+    margin-top: 10px;
 }
 div {
     padding: 10px;
 }
 input[type="text"] {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 200px;
 }
 textarea {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     resize: none;
     width: 300px;
     height: 50px;
 }
-#to_do_items {
-    height: 200px;
-    overflow: auto;
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button:hover {
+    color:black;
+    background-color: #fae18d;
+    cursor: pointer;
 }
 .delete_btn {
     background: url("../img/trash.jpg");
@@ -36,23 +42,23 @@ textarea {
     border: none;
     cursor: pointer;
 }
+footer {
+    position: fixed;
+    bottom: 0;
+}
 @media only screen and (min-width: 600px) and (max-width: 768px){
+    body {
+        background-image: url("../img/pencil_paper_tablet.jpg");
+    }
     #grid-container {
         grid-template-columns: repeat(1, 480px);
-        background-image: url("../img/pencil_paper_tablet.jpg");
-        height: 550px;
-    }
-    main {
-        height: 450px;
     }
 }
 @media only screen and (min-width: 768px) {
+    body {
+        background-image: url("../img/pencil_paper.jpg");
+    }
     #grid-container {
         grid-template-columns: repeat(1, 580px);
-        background-image: url("../img/pencil_paper.jpg");
-        height: 650px;
-    }
-    main {
-        height: 500px;
     }
 }
